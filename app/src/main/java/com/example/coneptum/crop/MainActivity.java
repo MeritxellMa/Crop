@@ -24,10 +24,12 @@ public class MainActivity extends AppCompatActivity{
         picView.setVerticalScrollBarEnabled(true);
         picView.setHorizontalScrollBarEnabled(true);
         picView.getSettings().setBuiltInZoomControls(true);
-        picView.getSettings().setUseWideViewPort(true);
+        picView.getSettings().setDisplayZoomControls(false);
 
         picView.loadUrl("file:///android_res/drawable/descarga.html");
-       
+
+        //picView.setInitialScale();
+
     }
 
 }
